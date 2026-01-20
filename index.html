@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>BrasPress App</title>
+  <title>BrasPress Transportes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -16,40 +16,55 @@
     header {
       background: #003f87;
       color: white;
-      padding: 20px;
+      padding: 30px 20px;
+    }
+
+    main {
+      padding: 40px 20px;
     }
 
     button {
       background: #0056b3;
       color: white;
-      padding: 15px 25px;
+      padding: 15px 35px;
       font-size: 18px;
       border: none;
       border-radius: 8px;
       cursor: pointer;
-      margin-top: 30px;
+    }
+
+    button:hover {
+      background: #003f87;
+    }
+
+    footer {
+      margin-top: 40px;
+      color: #666;
+      font-size: 14px;
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  <h1>BrasPress Transportes</h1>
-  <p>Aplicativo oficial</p>
-</header>
+  <header>
+    <h1>BrasPress Transportes</h1>
+    <p>Aplicativo oficial</p>
+  </header>
 
-<main>
-  <p>Acesse as vagas e informações da BrasPress</p>
+  <main>
+    <p>Faça parte de uma das maiores transportadoras do Brasil.</p>
+    <p>Baixe o aplicativo e confira as vagas disponíveis.</p>
 
-  <button onclick="abrirApp()">Abrir Aplicativo</button>
-</main>
+    <!-- BOTÃO QUE BAIXA O APK -->
+    <a href="BrasPress.apk" download>
+      <button>Baixar Aplicativo</button>
+    </a>
+  </main>
 
-<script>
-  function abrirApp() {
-    window.location.href = "https://braspress-web.github.io/BrasPress/";
-  }
-</script>
+  <footer>
+    © 2026 BrasPress - Todos os direitos reservados
+  </footer>
 
 </body>
 </html>
