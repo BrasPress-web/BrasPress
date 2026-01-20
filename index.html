@@ -2,39 +2,74 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Vagas de Emprego</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braspress | Trabalhe Conosco</title>
 
     <style>
-        .btn-download {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: #28a745;
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #003366, #00509e);
             color: #ffffff;
-            font-size: 18px;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: background-color 0.3s ease;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
 
-        .btn-download:hover {
-            background-color: #218838;
+        .box {
+            max-width: 500px;
+            padding: 40px 25px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 35px;
+            line-height: 1.5;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 16px 40px;
+            background-color: #f2a900;
+            color: #003366;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
         }
     </style>
 </head>
 <body>
 
-    <h1>Aplicativo de Vagas de Emprego</h1>
-    <p>Clique no botão abaixo para baixar o aplicativo:</p>
+    <div class="box">
+        <h1>Braspress Transportes</h1>
+        <p>
+            Faça parte de uma das maiores transportadoras do Brasil.  
+            Baixe o aplicativo e confira as vagas disponíveis.
+        </p>
 
-    <a 
-        href="https://github.com/SEU_USUARIO/SEU_REPOSITORIO/releases/download/v1.0/app-vagas.apk"
-        class="btn-download"
-        target="_blank"
-        download
-    >
-        📥 Baixar Aplicativo
-    </a>
+        <a 
+            href="https://github.com/SEU_USUARIO/SEU_REPOSITORIO/releases/download/v1.0/braspress-app.apk"
+            class="btn"
+            target="_blank"
+            download
+        >
+            📲 Baixar Aplicativo
+        </a>
+    </div>
 
 </body>
 </html>
