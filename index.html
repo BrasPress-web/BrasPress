@@ -6,70 +6,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: Arial, sans-serif;
-      background: #f2f2f2;
+    }
+
+    body {
+      height: 100vh;
+      background: 
+        linear-gradient(rgba(0, 40, 90, 0.7), rgba(0, 40, 90, 0.7)),
+        url("caminhao.jpg") no-repeat center center / cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
       text-align: center;
     }
 
-    header {
-      background: #003f87;
-      color: white;
-      padding: 30px 20px;
+    .container {
+      background: rgba(0, 0, 0, 0.45);
+      padding: 50px 30px;
+      border-radius: 12px;
+      max-width: 420px;
+      width: 90%;
     }
 
-    main {
-      padding: 40px 20px;
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 30px;
+      line-height: 1.5;
     }
 
     button {
-      background: #0056b3;
-      color: white;
-      padding: 15px 35px;
+      background: #ffb400;
+      color: #000;
+      padding: 16px 40px;
       font-size: 18px;
+      font-weight: bold;
       border: none;
       border-radius: 8px;
       cursor: pointer;
-      margin: 10px;
+      transition: 0.3s;
     }
 
     button:hover {
-      background: #003f87;
+      background: #e0a100;
     }
 
     footer {
-      margin-top: 40px;
-      color: #666;
-      font-size: 14px;
+      margin-top: 25px;
+      font-size: 13px;
+      opacity: 0.8;
     }
   </style>
 </head>
 
 <body>
 
-  <header>
+  <div class="container">
     <h1>BrasPress Transportes</h1>
-    <p>Aplicativo oficial</p>
-  </header>
+    <p>
+      Faça parte de uma das maiores transportadoras do Brasil.  
+      Baixe nosso aplicativo oficial e confira as vagas disponíveis.
+    </p>
 
-  <main>
-    <p>Baixe o aplicativo oficial da BrasPress.</p>
-
-    <!-- LINK 1 -->
+    <!-- BOTÃO ÚNICO DE DOWNLOAD -->
     <a href="BrasPress.apk" download>
-      <button>Baixar Aplicativo (Versão 1)</button>
+      <button>Baixar Aplicativo</button>
     </a>
 
-    <!-- LINK 2 -->
-    <a href="BrasPress%20(2).apk" download>
-      <button>Baixar Aplicativo (Versão 2)</button>
-    </a>
-  </main>
-
-  <footer>
-    © 2026 BrasPress - Todos os direitos reservados
-  </footer>
-
-</body>
-</html>
+    <footer>
+      © 2026 BrasPress
+    </footer>
